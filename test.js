@@ -1,15 +1,17 @@
-for (i = 0; i <10; i++) {
+function getAverage (a,b){
 
-    if(i === 5 || i === 3){
+    var average = (a+b) / 2;   //local variable
+    console.log(average)
+    return average;
 
-        continue;
-    }
-
-    console.log(i);
-
-    if (i === 7) {
-
-        break;
-    }
 }
-console.log("I have broken out of the loop");
+
+var myResult = getAverage(7,11);           //global variable
+
+function logResult(){
+
+    console.log("the average is " + myResult + " inside the function");
+
+}
+
+logResult();
