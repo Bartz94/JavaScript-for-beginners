@@ -1,9 +1,7 @@
-// the first alert
-alert("Hello, World!");
+var myVariableBart = 10;
 
-// the second alert
-alert("Hello, World!");
+myvar2 = "hello";
 
-//move the image from top to bottom
-//make the image invisible
-//make the image visible
+myvar2= "hello again"
+
+var customerAge = 32;
