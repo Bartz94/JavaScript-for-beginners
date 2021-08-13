@@ -1,16 +1,14 @@
-var title = document.getElementById("page-title");
+var newLi = document.createElement("li");
+var newA = document.createElement("a");
 
-title.setAttribute("style", "position: relative;");
-title.setAttribute("style", "left: 10px;");
-
-title.setAttribute("style", "position: relative;, left: 10px;");
+var menu = document.getElementById("main-nav").getElementsByTagName("ul")[0];
 
 
-title.style.left = "20px";
-title.style.top = "10px";
-title.style.color = "red";
+
+menu.appendChild(newLi);
+newLi.appendChild(newA);
+
+newA.innerHTML = "Blog";  //Dodaje napis do elemntu
 
 
-title.style.background-color = "blue";  //error, nie zapisujemy tak jak w css
-title.style.backgroundColor = "blue"
-;
+menu.insertBefore(newLi, menu.getElementsByTagName("li")[0]);     //Dodaje nowy elemnt na koncu 
