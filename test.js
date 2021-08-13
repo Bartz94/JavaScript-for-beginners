@@ -1,17 +1,15 @@
+var birthday = new Date(1985, 0, 15, 11, 15, 25);
+var birthday2 = new Date(1985, 0, 15, 11, 15, 25);
 
-var Car = function(maxSpeed, driver){
+console.log(birthday.getMonth());
+console.log(birthday.getFullYear());
+console.log(birthday.getDate());
+console.log(birthday.getDay());
+console.log(birthday.getHours());
+console.log(birthday.getTime());
 
-    this.maxSpeed = maxSpeed;
-    this.driver = driver;
-    this.drive = function(speed, time) {console.log(speed * time);};
-    this.logDriver = function(){
-        console.log("driver name is " + this.driver);
+if (birthday.getTime() == birthday2.getTime()){
+    console.log("Birthday are euqal");
+} else {
+    console.log("Birthday are not equal");
 }
-
-var myCar = new Car(70, Bart);
-var myCar2 = new Car(40, czyzio);
-var myCar3 = new Car(90, dyzio);
-var myCar4 = new Car(20, pyzio);
-
-myCar.drive(30, 5);
-
