@@ -1,9 +1,5 @@
-document.getElementsByClassName("content");
+var myBody = document.getElementsByTagName("body");
+myBody[0].innerHTML = "<p>I am a paragraph tag</p>";
 
-var myContentDis = document.getElementsByClassName("content");
-
-var myH2 = myContentDis[1].getElementsByTagName("h2");
-
-myH2[0].innerHTML = "YO NINJAS";
-
-document.getElementById("page-title");
+var myTitle = document.getElementById("page-title");
+myTitle.textContent = "Yo Ninjas, get ready to learn!";
