@@ -1,5 +1,13 @@
-var myBody = document.getElementsByTagName("body");
-myBody[0].innerHTML = "<p>I am a paragraph tag</p>";
+var link = document.getElementById("test");
 
-var myTitle = document.getElementById("page-title");
-myTitle.textContent = "Yo Ninjas, get ready to learn!";
+link;
+link.getAttribute("href");
+link.getAttribute("class");
+
+link.setAttribute("class", "pie");
+link.setAttribute("alt", "hello");
+
+link.className;
+link.href;
+
+link.style
