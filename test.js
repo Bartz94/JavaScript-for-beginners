@@ -8,7 +8,7 @@ var menu = document.getElementById("main-nav").getElementsByTagName("ul")[0];
 menu.appendChild(newLi);
 newLi.appendChild(newA);
 
-newA.innerHTML = "Blog";  //Dodaje napis do elemntu
+newA.innerHTML = "Blog";  //Dodaje napis do elemntuu
 
 
 menu.insertBefore(newLi, menu.getElementsByTagName("li")[0]);     //Dodaje nowy elemnt na koncu 
