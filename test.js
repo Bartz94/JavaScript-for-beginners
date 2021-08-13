@@ -1,9 +1,19 @@
-var myString = new String()
-myString = "hello";
+var myArray = new Array();
+myArray[0] = 8;
+myArray[1] = "hello"
 
-myString.length
+var myCar = new Object();
+myCar.maxSpeed = 50;
+myCar.driver = "Bart";
+myCar.drive = function () { console.log("now driving"); };
 
-myString.toLocaleLowerCase
+myCar.drive();
 
+var myCar2 = {
+    maxSpeed: 70, 
+    driver: "Czyzio", 
+    drive: function(speed, time) {console.log(speed * time);}
+};
 
-var myString2 = "hi there";
+console.log(myCar2.maxSpeed);
+myCar2.drive(50, 3);
