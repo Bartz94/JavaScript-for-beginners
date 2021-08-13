@@ -1,15 +1,9 @@
-var birthday = new Date(1985, 0, 15, 11, 15, 25);
-var birthday2 = new Date(1985, 0, 15, 11, 15, 25);
+document.getElementsByClassName("content");
 
-console.log(birthday.getMonth());
-console.log(birthday.getFullYear());
-console.log(birthday.getDate());
-console.log(birthday.getDay());
-console.log(birthday.getHours());
-console.log(birthday.getTime());
+var myContentDis = document.getElementsByClassName("content");
 
-if (birthday.getTime() == birthday2.getTime()){
-    console.log("Birthday are euqal");
-} else {
-    console.log("Birthday are not equal");
-}
+var myH2 = myContentDis[1].getElementsByTagName("h2");
+
+myH2[0].innerHTML = "YO NINJAS";
+
+document.getElementById("page-title");
