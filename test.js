@@ -1,9 +1,13 @@
-var parent = document.getElementById("main-nav").getElementsByTagName("ul")[0];
-parent;
+alert("hey");
 
-var child = parent.getElementsByTagName("li")[0];
-child;
+var title = document.getElementById("page-title");
 
-var removed = parent.removeChild(child);
 
-parent.appendChild(removed);    //przywroci li tag ponownie do ul tag
+title.onclick = function(){
+    alert("You clicked me");
+};
+
+title.mouseover = function(){
+    alert("You hovered your mouse over me XD")
+};
+
