@@ -1,13 +1,15 @@
-alert("hey");
+var content = document.getElementById("content");
+var button = document.getElementById("show-more");
 
-var title = document.getElementById("page-title");
+button.onclick = function(){
 
-
-title.onclick = function(){
-    alert("You clicked me");
+    if(content.className == "open"){
+        //shrink the box
+        content.className = "";
+        button.innerHTML = "Show More";
+    } else{
+        //expand the box
+        content.className = "open";
+        button.innerHTML = "Show Less";
+    }
 };
-
-title.mouseover = function(){
-    alert("You hovered your mouse over me XD")
-};
-
