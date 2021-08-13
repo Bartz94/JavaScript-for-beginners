@@ -1,13 +1,16 @@
-var link = document.getElementById("test");
+var title = document.getElementById("page-title");
 
-link;
-link.getAttribute("href");
-link.getAttribute("class");
+title.setAttribute("style", "position: relative;");
+title.setAttribute("style", "left: 10px;");
 
-link.setAttribute("class", "pie");
-link.setAttribute("alt", "hello");
+title.setAttribute("style", "position: relative;, left: 10px;");
 
-link.className;
-link.href;
 
-link.style
+title.style.left = "20px";
+title.style.top = "10px";
+title.style.color = "red";
+
+
+title.style.background-color = "blue";  //error, nie zapisujemy tak jak w css
+title.style.backgroundColor = "blue"
+;
