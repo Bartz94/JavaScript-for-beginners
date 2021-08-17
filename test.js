@@ -1,21 +1,14 @@
-var ColorChanger = document.getElementById("color-changer");
-var colors = ["red", "blue", "green", "pink"];
-var counter = 0;
+var myForm = document.forms.myForm;
 
-function changeColor(){
 
-    if (counter >= colors.length){
-        counter = 0;
-    }
+myForm.name.onfocus = function(){
 
-    ColorChanger.style.background = colors[counter];
-    counter++;
+    myForm.name.style.border = "4px solid pink";
+
 }
 
-var myTimer = setInterval(changeColor, 2000);
+myForm.name.onblur = function(){
 
-ColorChanger.onclick = function(){
+    myForm.name.style.border = "none";
 
-    clearInterval(myTimer);
-    ColorChanger.innerHTML = "Timer stopped";
-};
+}
