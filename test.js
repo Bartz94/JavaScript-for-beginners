@@ -1,26 +1,9 @@
-function setUpEvents(){
+var myMessage = document.getElementById("message");
 
-        var content = document.getElementById("content");
-        var button = document.getElementById("show-more");
+function showMessage(){
 
-        button.onclick = function(){
+    myMessage.className = "show";
 
+}
 
-        if(content.className == "open"){
-            //shrink the box
-            content.className = "";
-            button.innerHTML = "Show More";
-        } else{
-            //expand the box
-            content.className = "open";
-            button.innerHTML = "Show Less";
-        }
-    };
-
-};
-
-window.onload = function(){
-
-    setUpEvents();
-
-};
+setTimeout(showMessage, 3000);
